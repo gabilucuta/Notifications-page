@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root
+{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--Lightgrayishblue2);
+}
+
+main
+{
+    width: 650px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.notifications
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.notification
+{
+    color: var(--Verydarkblue);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.notificationsNumber
+{
+    font-size: 20px;
+    background-color: var(--Blue);
+    color: white;
+    padding: 2px 15px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.markAll
+{
+    background-color: none;
+    border-radius: none;
+    text-decoration: none;
+    border: 0;
+    background: 0;
+    color: var(--Grayishblue);
+    cursor: pointer;
+}
+
+.markAll:hover
+{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+
+.notifContainer
+{
+    display: flex;
+    margin: 5px 0px;
+    padding: 10px;
+}
+
+.notifContainer > img
+{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.blue
+{
+    background-color: var(--Verylightgrayishblue);
+    border-radius: 10px;
+}
+
+.title
+{
+    color: var(--Darkgrayishblue);
+    align-content: center;
+}
+
+.name
+{
+    color: black;
+    font-weight: 800 ;
+}
+
+.name:hover
+{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+.tournament
+{
+    font-weight: 800;
+}
+
+.time
+{
+    margin-top: 3px;
+    font-size: 13px;
+    color: var(--Darkgrayishblue);
+}
+
+.message
+{
+    margin-top: 10px;
+    padding: 5px 0px;
+    padding: 10px;
+    border: solid 1px hsla(219, 12%, 42%, 0.664);
+    color: var(--Darkgrayishblue);
+    border-radius: 5px;
+}
+
+.message:hover
+{
+    background-color: var(--Lightgrayishblue1);
+    cursor: pointer;
+    border-color: rgba(245, 245, 220, 0);
+}
+
+.distance
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.post
+{
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.post:hover
+{
+    cursor: pointer;
+}
+
+span:hover
+{
+    color: var(--Blue);
+    cursor: pointer;
+}
+
+
+.chess
+{
+    color: var(--Blue);
+    font-weight: 800;
+}
+
+.newNot
+{
+    font-size: 10px;
+    color: var(--Red);
+}
+
+@media (max-width:500px)
+{
+    main 
+    {
+        max-width: 400px;
+        min-width: 400px;
+        padding: 15px;
+    }
+}
+
+
